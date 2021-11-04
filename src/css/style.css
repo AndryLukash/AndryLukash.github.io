@@ -1,0 +1,139 @@
+body{
+	font-family: Arial, sans-serif;
+}
+nav{
+	width: 100%; /*ширина блока*/
+	height: 60px;
+	background: #344051;
+}
+
+h2{
+	font-size: 25px;
+	text-align: center;
+	text-transform: uppercase;
+	/*margin-top: 105px;*/
+	font-weight: bold
+	display: inline-block;
+	border: 5px solid red;
+}
+
+.logo{
+	color: white;
+	font-size: 28px;
+	line-height: 60px; /*межстрочный интервал*/
+	margin-left: 20%; /*padding-left: 388px;*/
+	float: left; /*предыдущий элемент будет слева*/
+	/*border: 1px solid black;*/
+}
+
+.menu{
+	float: left;
+	margin-left: 25%;/*padding-left: 432px;*/
+	/*border: 1px solid black;*/
+}
+.menu li{
+	float: left;
+	line-height: 60px;
+	color: white;
+	margin-left: 40px;
+	font-size: 16px;
+	text-transform: uppercase;
+	/*border: 1px solid black;*/
+}
+
+.main{
+	width: 100%;
+	height: calc(100% - 60px); /*100% от body, в котором навигация 60*/
+	background: url("../img/bg2.png") 90% 100%/auto 85% no-repeat, url("../img/bg1.jpg") center/cover no-repeat; /* 90 и 100 - ширина и высота (расположение), 
+	auto и 85 - ширина и высота (самой картинки)*/
+	box-shadow: 0px -1px 10px #000 inset;/*смещение горизонт, смещение вертик, степень размытости - глубина, цвет. inset - тень внутри элемента*/
+}
+
+.tittle_container{
+	float: left;
+	margin-left: 400px;
+	margin-top: 433px;
+	color: #2c384a;
+	text-align: center;
+}
+
+.tittle_container h1{
+	font-size: 60px;
+	font-weight: bold;
+
+}
+
+.tittle_container h4{
+	margin-top: 40px;
+	font-size: 22px;
+	color: #79818d;
+}
+
+.tittle_container input{
+	height: 40px;
+	text-align: center;
+	border: 2px solid #6d7682;
+	background: none;
+	border-radius: 5px;
+	color: #79818d;
+	font-size: 13px;
+	padding: 0px 16px; /* верх низ право лево????????*/
+	margin: 58px 28px 0 14px;
+}
+hr{
+	border: 3px solid #d17700;
+	width: 70px;
+	margin: 30px auto 0px 924px; /* верх право низ лево???*/
+}
+.about_me{
+	width: 100%;
+	height: 717px;
+	background: white center;
+
+}
+
+.about_me h2{
+	margin-top: 105px;
+}
+
+
+img.pic{
+	margin: 30px auto 30px 860px; /* верх право низ лево???*/
+}
+
+.about_me p{
+	margin: 20px 592px 20px 595px;  /*верх право низ лево???*/
+	/*text-align: center;*/
+}
+
+.download{
+
+
+}
+
+button{
+	margin: 35px auto 100px 887px;
+	background-color: #fcfdfd;
+	border: 1px solid black;
+	border-radius: 5px;
+
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	cursor: pointer;
+	height: 30px;
+	width: 155px;
+}
+
+.skills{
+	width: 100%; /*ширина блока*/
+	height: 520px;
+	background: url("../img/bg2.jpg");
+
+
+}
+
+.skills h2{
+	/*padding-top: 105px;*/
+}

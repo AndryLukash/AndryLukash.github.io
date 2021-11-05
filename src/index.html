@@ -43,35 +43,33 @@
 		<img class="pic" src="img/about_me_pic.png" align="middle" alt="Тут могло быть Ваше фото ;)">
 		<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Quidem quaerat porro autem, dolor exercitationem perferendis? Possimus totam provident modi a recusandae eveniet placeat consequuntur neque?</p>
 		<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Quidem quaerat porro autem, dolor exercitationem perferendis? Possimus totam provident modi a recusandae eveniet placeat consequuntur neque?</p>
-		<!--<div class="download"></div>-->
-		<button name="dwnld_bttn"><img src="img/icon_bttn.png" alt="asd">Скачать резюме</button>
+		<button><img src="img/icon_bttn.png" alt="asd"><span>Скачать резюме</span></button>
 	</div>
 
 
 	<div class="skills">
 		<h2>Что я умею</h2>
 		<hr>
-
-		<div class="skills_list">
-			<img src="" alt="Иконка1">
+		<div class="skills_list" id="first_on_list">
+			<img src="img/skills1.png" alt="Иконка1">
 			<h5>Веб-дизайн</h5>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, libero.</p>
 		</div>
 
 		<div class="skills_list">
-			<img src="" alt="Иконка2">
+			<img src="img/skills2.png" alt="Иконка2">
 			<h5>Разработка</h5>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, libero.</p>
 		</div>
 
 		<div class="skills_list">
-			<img src="" alt="Иконка3">
+			<img src="img/skills3.png" alt="Иконка3">
 			<h5>CEO-оптимизация</h5>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, libero.</p>
 		</div>
 
 		<div class="skills_list">
-			<img src="" alt="Иконка4">
+			<img src="img/skills4.png" alt="Иконка4">
 			<h5>Маркетинг</h5>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, libero.</p>
 		</div>
@@ -81,13 +79,14 @@
 	<div class="cases">
 		<h2>Кейсы</h2>
 		<hr>
-		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, cumque!</p>
-		<img src="" alt="Пример сайта">
+		<p id="text_under_pic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, cumque!</p>
+
+		<img src="img/cases_pic.jpg" alt="Пример сайта">
 
 		<div class="cases_left">
-			<h3>CLIENT:</h3>
+			<h4>CLIENT:</h4>
 			<p>Компания</p>	
-			<h3>WEBSITE:</h3>
+			<h4>WEBSITE:</h4>
 			<p>www.google.com</p>	
 			<input type="submit" name="site_btn" value="VISIT LIVE SITE">
 		</div>
@@ -101,32 +100,35 @@
 	<div class="prices">
 		<h2>Расчет стоимости</h2>
 		<h3>Тип сайта</h3>
-		<select name="site_type">
+		<select id="site_type">
+			<option value="type1">Выберите пункт...</option>
 			<option value="type1">1</option>
 			<option value="type2">2</option>
 			<option value="type3">3</option>
 		</select>
 
 		<h3>Дизайн</h3>
-		<select name="site_designe">
+		<select id="site_designe">
+			<option value="type1">Выберите пункт...</option>
 			<option value="des1">1</option>
 			<option value="des2">2</option>
 			<option value="des3">3</option>
 		</select>
 
 		<h3>Адаптивность</h3>
-		<select name="site_adaptive">
+		<select id="site_adaptive">
+			<option value="type1">Выберите пункт...</option>
 			<option value="ad1">1</option>
 			<option value="ad2">2</option>
 			<option value="ad3">3</option>
 		</select>
 		<hr>
-		<p><span class="text1">Сроки</span> <span class="total_text1">0</span></p>
-		<p><span class="text2">Стоимость</span> <span class="total_text2">0</span></p>
+		<p><span class="text_total">Сроки</span> <span class="total_sum">0</span></p>
+		<p><span class="text_total">Стоимость</span> <span class="total_sum">0</span></p>
 	</div>
 
 
-	<div class="statistik">
+	<div class="statistics">
 		<h2>Немного статистики</h2>
 		<hr>
 		<div class="stat_list">
@@ -207,13 +209,13 @@
 	</div>
 
 
-	<div class="yandex_map">
-		<p>Карта с моей геолокацией в США или Австралии</p>
+	<div class="map">
+		<!-- <p>Карта с моей геолокацией в США или Австралии</p> -->
 	</div>
 
 
 	<footer>
-		<p>Сделано уважаемым господином из-за бугорья. (c)</p>
+		<p id="test">Сделано уважаемым господином из-за бугорья. (c)</p>
 	</footer>
 
 </body>

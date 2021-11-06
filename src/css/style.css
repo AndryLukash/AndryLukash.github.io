@@ -186,12 +186,37 @@ img.pic{
 
 .cases img{
 	margin-left: 395px;
+	display: block;
 }
+
 .cases_left{
-	border:1px solid black;
 	width: 204px;
 	height: 180px;
+	float: left;
+	margin-left: 390px;
+}
 
+.cases_left input{
+	width: 200px;
+	height: 45px;
+	background: #63b5ae;
+	color: white;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 8px;
+}
+
+.cases_left h3{
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.cases_left p{
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .cases_right{
@@ -199,6 +224,18 @@ img.pic{
 	height: 100px;
 	/*float: left;*/
 	/*border:1px solid black;*/
+}
+
+.cases_right h4{
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 8px;
+	margin-top: 8px;
+}
+
+.cases_right p{
+	width: 850px;
+	margin-top: 8px;
 }
 
 .prices h3{

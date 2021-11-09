@@ -12,7 +12,7 @@ h2{
 	font-size: 25px;
 	text-align: center;
 	text-transform: uppercase;
-	/*margin-top: 105px;*/
+	/*padding-top: 105px;*/
 	font-weight: bold;
 }
 
@@ -139,7 +139,7 @@ img.pic{
 }
 
 .skills h2{
-	margin-top: 105px;
+	padding-top: 105px;
 }
 
 .skills_list{
@@ -171,7 +171,7 @@ img.pic{
 
 /* блок Кейсы*/
 .cases h2{
-	margin-top: 60px;
+	padding-top: 60px;
 }
 
 .cases hr{
@@ -191,7 +191,7 @@ img.pic{
 
 .cases_left{
 	width: 204px;
-	height: 180px;
+	height: 200px;
 	float: left;
 	margin-left: 390px;
 }
@@ -220,8 +220,9 @@ img.pic{
 }
 
 .cases_right{
-	width: 855px;
-	height: 100px;
+	margin-left: 670px;
+	width: 900px;
+	height: 200px;
 	/*float: left;*/
 	/*border:1px solid black;*/
 }
@@ -243,7 +244,7 @@ img.pic{
 	text-transform: uppercase;
 	font-weight: bold;
 	margin-bottom: 25px;
-	margin-top: 25px;
+	padding-top: 25px;
 }
 
 .prices{
@@ -270,12 +271,12 @@ img.pic{
 	width: 100%;
 	/*border: 1px solid black;*/
 
+
 }
 
 .text_total{
 	font-size: 18px;
 	font-weight: bold;
-	text-align: left;
 	margin-top: 25px;
 }
 
@@ -297,7 +298,7 @@ img.pic{
 }
 
 .statistics h2{
-	margin-top: 100px; 
+	padding-top: 100px; 
 }
 
 .statistics h4{
@@ -336,14 +337,132 @@ img.pic{
 	width: 100%;
 	height: 595px;
 }
+
+.rewiews h2{
+	padding-top: 103px;
+}
+
+.rewiews img{
+	margin-left: 910px;
+	margin-top: 60px;
+	margin-bottom: 50px;
+}
+
+.rewiews p{
+	margin-top: 15px;
+	margin-bottom:15px;
+	text-align: center;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rewiews span{
+	font-weight: bold;
+}
+
+.rewiews_radio{
+	margin-left: 910px;
+}
+
+.rewiews input{
+	/*color: #c96500; ???????????????????*/
+	margin-top: 20px;
+	margin-right: 10px;
+}
 /* /блок Отзывы*/
 
 /* блок Контакты*/
 .contacts{
 	width: 100%;
-	height: 458px;
+	height: 808px;
 	background: url("../img/bg4.jpg");
 	color: white;
+}
+
+.contacts>p{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 45px;
+}
+
+.contacts h2{
+	padding-top: 103px;
+}
+
+.contacts h3{
+	margin-top: 30px;
+	margin-bottom: 45px;
+	font-size: 19px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.cont_line_pics{
+	margin-left: 594px;
+	width: 740px;
+	height: 100px;
+}
+
+.cont_line_pics p{
+	margin-top: 15px;
+	text-align: center;
+}
+
+.cont_line_pics img{
+	margin-left: 45px;
+}
+
+.contacts_line{
+	float: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	width: 135px;
+}
+
+.contact_input{
+	margin-left: 594px;
+	width: 740px;
+}
+
+#name_input{
+	width: 353px;
+	height: 35px;
+
+}
+
+#email_input{
+	width: 353px;
+	height: 35px;
+	margin-left: 30px;
+}
+
+#text_input{
+	width: 740px;
+	height: 92px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+#contact_submit{
+	background-color: Transparent;
+	border: 1px solid white;
+	color: white;
+	height: 43px;
+	width: 122px;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-left: 305px;
+}
+
+.img_social_media{
+	margin-left: 753px;
+	margin-top: 50px;
+}
+
+.img_social_media img{
+	margin-right: 50px;
 }
 
 /* /блок Контакты*/
@@ -354,6 +473,7 @@ img.pic{
 	height: 245px;
 	background: url("../img/map.jpg");
 }
+
 /* /блок Карта*/
 
 /* блок нижняя граница*/
@@ -366,7 +486,7 @@ footer{
 }
 
 footer p{
-	margin-top: 40px;
+	padding-top: 40px;
 	font-size: 14px;
 }
 /* /блок нижняя граница*/

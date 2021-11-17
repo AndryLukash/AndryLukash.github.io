@@ -6,6 +6,7 @@ nav{
 	width: 100%; /*ширина блока*/
 	height: 60px;
 	background: #344051;
+	position: fixed;
 }
 
 h2{
@@ -22,6 +23,11 @@ hr{
 	margin: 30px auto 0px 924px; /* верх право низ лево???*/
 }
 
+main{
+	width: 100%;
+	height: 100%;
+}
+
 /*Блок навигации*/
 .logo{
 	color: white;
@@ -29,7 +35,9 @@ hr{
 	line-height: 60px; /*межстрочный интервал*/
 	margin-left: 20%; /*padding-left: 388px;*/
 	float: left; /*предыдущий элемент будет слева*/
-	/*border: 1px solid black;*/
+	-webkit-animation: comming 2s ease;
+	-o-animation: comming 2s ease;
+	animation: comming 2s ease;
 }
 
 .menu{
@@ -44,12 +52,84 @@ hr{
 	margin-left: 40px;
 	font-size: 16px;
 	text-transform: uppercase;
-	/*border: 1px solid black;*/
+	-webkit-animation: topshift 0.4s ease forwards;
+	-o-animation: topshift 0.4s ease forwards;
+	animation: topshift 0.4s ease forwards;
+	opacity: 0;
+}
+
+.menu li a{
+	transition: all 0.2s;
+	color: white;
+	transform: scale(1);
+	display: inline-block;
+}
+
+.menu li a:visited{
+	color: white;
+}
+
+.menu li a:hover{
+	color: #ffd700;
+}
+
+.menu li a:active{
+transform: scale(1.1);
+}
+
+.menu li:nth-child(2){
+	animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+	animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+	animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+	animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+	animation-delay: 2.0s;
+}
+
+@keyframes comming{ /*logo*/
+	from{
+		opacity: 0;
+	}
+
+	to{	
+		opacity: 1;
+	}
+}
+
+@keyframes topshift{ /*menu*/
+	from{
+		opacity: 0;
+		margin-top: -80px;
+	}
+
+	to{	
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+
+@keyframes titlemove{ /*menu*/
+	from{
+		opacity: 0;
+		margin-left: -500px;
+	}
+
+	to{	
+		opacity: 1;
+		margin-left: 400px;
+	}
 }
 
 .main{
 	width: 100%;
-	height: calc(100% - 60px); /*100% от body, в котором навигация 60*/
+	height: 100%; /*было calc(100% - 60px); 100% от body, в котором навигация 60*/
 	background: url("../img/bg2.png") 90% 100%/auto 85% no-repeat, url("../img/bg1.jpg") center/cover no-repeat; /* 90 и 100 - ширина и высота (расположение), 
 	auto и 85 - ширина и высота (самой картинки)*/
 	box-shadow: 0px -1px 10px #000 inset;/*смещение горизонт, смещение вертик, степень размытости - глубина, цвет. inset - тень внутри элемента*/
@@ -62,6 +142,13 @@ hr{
 	margin-top: 433px;
 	color: #2c384a;
 	text-align: center;
+	opacity: 0;
+	-webkit-animation: titlemove 0.7s ease forwards;
+	-o-animation: titlemove 0.7s ease forwards;
+	animation: titlemove 0.7s ease forwards;
+	-webkit-animation-delay: 2.4s;
+	-o-animation-delay: 2.4s;
+	animation-delay: 2.4s;
 }
 
 .tittle_container h1{
@@ -86,6 +173,17 @@ hr{
 	font-size: 13px;
 	padding: 0px 16px; /* верх низ право лево????????*/
 	margin: 58px 28px 0 14px;
+	transition: all 0.2s;
+	transform: scale(1);
+}
+
+.tittle_container input:hover{
+	background: #344051;
+	color: white;
+	}
+
+.tittle_container input:active{
+	transform: scale(1.1);
 }
 
 /* /блок Приветствия*/
@@ -285,6 +383,7 @@ img.pic{
 	font-weight: bold;
 	text-align: right;
 	margin-top: 25px;
+	float: right;
 	/*border: 1px solid black;*/
 }
 /* /блок Кейсы*/

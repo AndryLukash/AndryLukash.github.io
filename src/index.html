@@ -4,36 +4,38 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Андрей Браун - Веб-разработчик</title>
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/loadscreen.css">
+	<link rel="stylesheet" href="css/animations.css">
 
 </head>
 <body>
 	
- <script>
-    window.onload = function () {
-      document.body.classList.add('loaded_hiding');
-      window.setTimeout(function () {
-        document.body.classList.add('loaded');
-        document.body.classList.remove('loaded_hiding');
-      }, 500);
-    }
-  </script>
+	<script>
+		window.onload = function () {
+			document.body.classList.add('loaded_hiding');
+			window.setTimeout(function () {
+				document.body.classList.add('loaded');
+				document.body.classList.remove('loaded_hiding');
+			}, 500);
+		}
+	</script>
 
 	<div class="preloader">
-	<div class="lds-roller">
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
+		<div class="lds-roller">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
 	</div>
-	</div>
-    
+
 
 	<header>
 		<nav>
@@ -53,9 +55,9 @@
 
 	<main>
 
-			<div class="loader-wrapper">
-				<span class="loadder"><span class="loadder-inner"></span></span>
-			</div>
+		<div class="loader-wrapper">
+			<span class="loadder"><span class="loadder-inner"></span></span>
+		</div>
 
 		<section class="main_info">
 			<div class="tittle_container">
@@ -87,19 +89,19 @@
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, libero.</p>
 			</div>
 
-			<div class="skills_list">
+			<div class="skills_list animate__wobble">
 				<img src="img/skills2.png" alt="Иконка2">
 				<h5>Разработка</h5>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, libero.</p>
 			</div>
 
-			<div class="skills_list">
+			<div class="skills_list animate__wobble">
 				<img src="img/skills3.png" alt="Иконка3">
 				<h5>CEO-оптимизация</h5>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, libero.</p>
 			</div>
 
-			<div class="skills_list">
+			<div class="skills_list animate__wobble">
 				<img src="img/skills4.png" alt="Иконка4">
 				<h5>Маркетинг</h5>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, libero.</p>
@@ -226,12 +228,14 @@
 
 			<div class="contact_input">
 				<h3>Оставьте мне весточку</h3>
-				<input type="text" id="name_input" value="" placeholder="Имя">
-				<input type="text" id="email_input" value="" placeholder="Email">
-				<br>
-				<textarea type="text" id="text_input" cols="30" rows="10" placeholder="Сообщение"></textarea>
-				<br>
-				<input type="submit" id="contact_submit" value="Отправить">
+				<form action="">
+					<input type="text" id="name_input" value="" placeholder="Имя" required>
+					<input type="text" id="email_input" value="" placeholder="Email" autocomplete="on" required>
+					<br>
+					<textarea type="text" id="text_input" cols="30" rows="10" placeholder="Сообщение" required></textarea>
+					<br>
+					<input type="submit" id="contact_submit" value="Отправить">
+				</form>
 			</div>
 
 			<div class="img_social_media">

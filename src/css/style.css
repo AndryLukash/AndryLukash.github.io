@@ -40,9 +40,6 @@ main{
 	line-height: 60px; /*межстрочный интервал*/
 	margin-left: 20%; /*padding-left: 388px;*/
 	float: left; /*предыдущий элемент будет слева*/
-	-webkit-animation: comming 2s ease;
-	-o-animation: comming 2s ease;
-	animation: comming 2s ease;
 }
 
 .menu{
@@ -50,6 +47,7 @@ main{
 	margin-left: 25%;
 	/*border: 1px solid black;*/
 }
+
 .menu li{
 	float: left;
 	line-height: 60px;
@@ -57,80 +55,9 @@ main{
 	margin-left: 40px;
 	font-size: 16px;
 	text-transform: uppercase;
-	-webkit-animation: topshift 0.4s ease forwards;
-	-o-animation: topshift 0.4s ease forwards;
-	animation: topshift 0.4s ease forwards;
-	opacity: 0;
 }
 
-.menu li a{
-	transition: all 0.2s;
-	color: white;
-	transform: scale(1);
-	display: inline-block;
-}
 
-.menu li a:visited{
-	color: white;
-}
-
-.menu li a:hover{
-	color: #ffd700;
-}
-
-.menu li a:active{
-	transform: scale(1.1);
-}
-
-.menu li:nth-child(2){
-	animation-delay: 0.4s;
-}
-.menu li:nth-child(3){
-	animation-delay: 0.8s;
-}
-.menu li:nth-child(4){
-	animation-delay: 1.2s;
-}
-.menu li:nth-child(5){
-	animation-delay: 1.6s;
-}
-.menu li:nth-child(6){
-	animation-delay: 2.0s;
-}
-
-@keyframes comming{ /*logo*/
-	from{
-		opacity: 0;
-	}
-
-	to{	
-		opacity: 1;
-	}
-}
-
-@keyframes topshift{ /*menu*/
-	from{
-		opacity: 0;
-		margin-top: -80px;
-	}
-
-	to{	
-		opacity: 1;
-		margin-top: 0px;
-	}
-}
-
-@keyframes titlemove{ /*menu*/
-	from{
-		opacity: 0;
-		margin-left: -500px;
-	}
-
-	to{	
-		opacity: 1;
-		margin-left: 400px;
-	}
-}
 
 .main_info{
 	width: 100%;
@@ -147,19 +74,11 @@ main{
 	margin-top: 433px;
 	color: #2c384a;
 	text-align: center;
-	opacity: 0;
-	-webkit-animation: titlemove 0.7s ease forwards;
-	-o-animation: titlemove 0.7s ease forwards;
-	animation: titlemove 0.7s ease forwards;
-	-webkit-animation-delay: 2.4s;
-	-o-animation-delay: 2.4s;
-	animation-delay: 2.4s;
 }
 
 .tittle_container h1{
 	font-size: 60px;
 	font-weight: bold;
-
 }
 
 .tittle_container h4{
@@ -176,23 +95,9 @@ main{
 	border-radius: 5px;
 	color: #79818d;
 	font-size: 13px;
-	padding: 0px 16px; /* верх низ право лево????????*/
+	padding: 0px 16px;
 	margin: 58px 28px 0 14px;
-	transition: all 0.2s;
-	transform: scale(1);
-	
 }
-
-.tittle_container input:hover{
-	background: #344051;
-	color: white;
-}
-
-.tittle_container input:active{
-	transform: scale(1.1);
-}
-
-/* /блок Приветствия*/
 
 /* блок Обо мне*/
 .about_me{
@@ -309,8 +214,7 @@ img.pic{
 .cases_left input{
 	width: 200px;
 	height: 45px;
-	background: #63b5ae;
-	color: white;
+
 	border-radius: 5px;
 	font-size: 16px;
 	font-weight: bold;
@@ -362,7 +266,7 @@ img.pic{
 .prices{
 	width: 900px;
 	height: 525px;
-	margin-left: 525px;
+	margin: auto; /*left 525px*/
 	/*border: 1px solid black;*/
 }
 
@@ -389,16 +293,16 @@ img.pic{
 .text_total{
 	font-size: 18px;
 	font-weight: bold;
-	margin-top: 25px;
-	/*display: inline-block;*/
+	margin-top: 5px;
+	display: inline-block;
 }
 
 .total_sum{
 	font-size: 18px;
 	font-weight: bold;
 	text-align: right;
-	margin-top: 25px;
-	/*display: inline-block;*/
+	margin-top: 5px;
+	display: inline-block;
 	float: right;
 	/*border: 1px solid black;*/
 }
@@ -410,6 +314,10 @@ img.pic{
 	height: 500px;
 	background: url("../img/bg3.jpg");
 	text-align: center;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .statistics h2{
@@ -438,7 +346,7 @@ img.pic{
 }
 
 #first_stat_list{
-	margin-left: 440px;
+	margin-left: 21.5%; /*440px*/
 }
 
 .stat_list{
@@ -458,7 +366,8 @@ img.pic{
 }
 
 .rewiews img{
-	margin-left: 910px;
+	display: block;
+	margin: auto; /*910px*/
 	margin-top: 60px;
 	margin-bottom: 50px;
 }
@@ -468,8 +377,7 @@ img.pic{
 	margin-bottom:15px;
 	text-align: center;
 	width: 700px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 }
 
 .rewiews span{
@@ -477,7 +385,7 @@ img.pic{
 }
 
 .rewiews_radio{
-	margin-left: 910px;
+	margin-left: 48%; /*910px*/
 }
 
 .rewiews input{
@@ -515,7 +423,7 @@ img.pic{
 }
 
 .cont_line_pics{
-	margin-left: 594px;
+	margin: auto; /*594px*/
 	width: 740px;
 	height: 100px;
 }
@@ -526,11 +434,13 @@ img.pic{
 }
 
 .cont_line_pics img{
-	margin-left: 45px;
+	margin-left: 50px;
 }
 
 .contacts_line{
-	float: left;
+	/*float: left;*/
+	display: inline-block;
+	vertical-align: middle;
 	margin-left: 50px;
 	margin-right: 50px;
 	width: 135px;
@@ -572,7 +482,8 @@ img.pic{
 }
 
 .img_social_media{
-	margin-left: 753px;
+	width: 100%;
+	margin-left: 753px; /*753px*/
 	margin-top: 50px;
 }
 

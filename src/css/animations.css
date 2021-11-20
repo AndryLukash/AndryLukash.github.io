@@ -1,0 +1,191 @@
+/*анимация меню*/
+.logo{
+	-webkit-animation: comming 2s ease;
+	-o-animation: comming 2s ease;
+	animation: comming 2s ease;
+}
+
+.menu li{
+	-webkit-animation: topshift 0.4s ease forwards;
+	-o-animation: topshift 0.4s ease forwards;
+	animation: topshift 0.4s ease forwards;
+	opacity: 0;
+}
+
+.menu li a{
+	transition: all 0.2s;
+	color: white;
+	transform: scale(1);
+	display: inline-block;
+}
+
+.menu li a:visited{
+	color: white;
+}
+
+.menu li a:hover{
+	color: #ffd700;
+}
+
+.menu li a:active{
+	transform: scale(1.1);
+}
+
+.menu li:nth-child(2){
+	animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+	animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+	animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+	animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+	animation-delay: 2.0s;
+}
+
+@keyframes comming{ /*logo*/
+	from{
+		opacity: 0;
+	}
+
+	to{	
+		opacity: 1;
+	}
+}
+
+@keyframes topshift{ /*menu*/
+	from{
+		opacity: 0;
+		margin-top: 80px;
+	}
+
+	to{	
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+
+@keyframes titlemove{ /*menu*/
+	from{
+		opacity: 0;
+		margin-left: -500px;
+	}
+
+	to{	
+		opacity: 1;
+		margin-left: 400px;
+	}
+}
+/* /анимация меню*/
+
+/* блок Приветствия*/
+.tittle_container{
+	opacity: 0;
+	-webkit-animation: titlemove 0.7s ease forwards;
+	-o-animation: titlemove 0.7s ease forwards;
+	animation: titlemove 0.7s ease forwards;
+	-webkit-animation-delay: 2.4s;
+	-o-animation-delay: 2.4s;
+	animation-delay: 2.4s;
+}
+
+.tittle_container input{
+	transition: all 0.2s;
+	transform: scale(1);
+}
+
+.tittle_container input:hover{
+	background: #344051;
+	color: white;
+}
+
+.tittle_container input:active{
+	transform: scale(1.1);
+}
+/* /блок Приветствия*/
+
+/* блок Обо мне*/
+.about_me button{
+	transform: scale(1.0);
+	transition: all 0.3s;
+}
+
+.about_me button:hover{
+	transform: scale(1.05);
+	box-shadow: 0px 0px 10px 0.5px gray;
+}
+/* /блок Обо мне*/
+
+
+/*Кейсы*/
+.cases_left input{
+	background: #fff;
+	border-color: #63b5ae; 
+	color: white;
+	box-shadow: 0 0 40px 40px #63b5ae inset, 0 0 0 0 #63b5ae;
+	-webkit-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+}
+
+.cases_left input:hover {
+	box-shadow: 0 0 10px 0 #63b5ae inset, 0 0 10px 4px #63b5ae;
+	color: #63b5ae;
+}
+
+
+.prices select:hover{
+	box-shadow: 5px 10px 10px 4px gray;
+}
+/*/Кейсы*/
+
+/* блок Умения*/
+.skills_list:hover{
+	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+/* блок Умения*/
+
+/* блок Статистика*/
+.statistics{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* /блок Статистика*/
+
+/* блок Контакты*/
+#contact_submit{
+	transform: scale(1.0);
+	transition: all 0.3s;
+}
+
+#contact_submit:hover{
+	/*transform: scale(1.05);*/
+	box-shadow: 0px 0px 10px 2px white;
+}
+/* /блок Контакты*/

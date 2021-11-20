@@ -6,8 +6,34 @@
 	<title>Андрей Браун - Веб-разработчик</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/loadscreen.css">
+
 </head>
 <body>
+	
+ <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+
+	<div class="preloader">
+	<div class="lds-roller">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	</div>
+    
 
 	<header>
 		<nav>
@@ -26,6 +52,11 @@
 	</header>
 
 	<main>
+
+			<div class="loader-wrapper">
+				<span class="loadder"><span class="loadder-inner"></span></span>
+			</div>
+
 		<section class="main_info">
 			<div class="tittle_container">
 				<h1>Привет <br> Я Андрей Браун</h1>
@@ -82,7 +113,6 @@
 			<p id="text_under_pic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, cumque!</p>
 
 			<img src="img/cases_pic.jpg" alt="Пример сайта">
-
 
 			<div class="cases_left">
 				<h3>CLIENT:</h3>

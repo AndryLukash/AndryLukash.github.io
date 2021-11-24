@@ -1,3 +1,15 @@
+/*подключение шрифтов (Вариант 3) import может быть только вначале*/
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');*/
+
+@font-face { /*подключение шрифтов (Вариант 4)*/
+	font-family: 'Conv_BAUHS93';
+	src: url('../fonts/BAUHS93.eot');
+	src: local('☺'), url('../fonts/BAUHS93.woff') format('woff'), url('../fonts/BAUHS93.ttf') format('truetype'), url('../fonts/BAUHS93.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 body{
 	font-family: Arial, sans-serif;
 	/*display: grid;
@@ -33,8 +45,13 @@ main{
 	height: 100%;
 }
 
+.custom-icon{
+	font-size:40px;
+}
+
 /*Блок навигации*/
 .logo{
+	font-family: 'Conv_BAUHS93', sans-serif;
 	color: white;
 	font-size: 28px;
 	line-height: 60px; /*межстрочный интервал*/
@@ -77,8 +94,9 @@ main{
 }
 
 .tittle_container h1{
+	/*font-family: 'Roboto', sans-serif;*/
 	font-size: 60px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 
 .tittle_container h4{
@@ -315,9 +333,9 @@ img.pic{
 	background: url("../img/bg3.jpg");
 	text-align: center;
 	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .statistics h2{
@@ -447,14 +465,13 @@ img.pic{
 }
 
 .contact_input{
-	margin-left: 594px;
+	margin: auto; /*594px*/
 	width: 740px;
 }
 
 #name_input{
 	width: 353px;
 	height: 35px;
-
 }
 
 #email_input{

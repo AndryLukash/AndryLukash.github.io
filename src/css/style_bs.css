@@ -60,14 +60,12 @@ main{
 	color: white;
 	font-size: 28px;
 	line-height: 60px; /*межстрочный интервал*/
-	margin-left: 20%; /*padding-left: 388px;*/
 	float: left; /*предыдущий элемент будет слева*/
 }
 
 .menu{
 	float: left;
-	margin-left: 25%;
-	/*border: 1px solid black;*/
+
 }
 
 .menu li{
@@ -75,12 +73,15 @@ main{
 	line-height: 60px;
 	color: white;
 	margin-left: 40px;
-	font-size: 16px;
+	font-size: 14px;
 	text-transform: uppercase;
-	/*text-decoration: none;*/
 }
 
-
+.menu li a{
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+}
 
 .main_info{
 	width: 100%;
@@ -93,16 +94,15 @@ main{
 /* блок Приветствия*/
 .tittle_container{
 	float: left;
-	margin-left: 400px;
-	margin-top: 433px;
 	color: #2c384a;
 	text-align: center;
+	width: 100%;
 }
 
 .tittle_container h1{
-	/*font-family: 'Roboto', sans-serif;*/
-	font-size: 60px;
-	/*font-weight: bold;*/
+	font-family: Arial, sans-serif;
+	font-size: 70px;
+	font-weight: 600;
 }
 
 .tittle_container h4{
@@ -289,9 +289,18 @@ img.pic{
 
 .prices{
 	width: 900px;
-	height: 525px;
+	height: 725px;
 	margin: auto; /*left 525px*/
+	padding: 50px;
+	margin-bottom: 50px;
 	/*border: 1px solid black;*/
+	box-shadow: 0px -1px 10px #000;
+}
+
+.btn-order{
+	background: #00b6af;
+	display: block;
+	margin: auto;
 }
 
 .prices hr{
@@ -310,8 +319,6 @@ img.pic{
 .prices p{
 	width: 100%;
 	/*border: 1px solid black;*/
-
-
 }
 
 .text_total{
@@ -540,3 +547,36 @@ footer p{
 	font-size: 14px;
 }
 /* /блок нижняя граница*/
+
+.white-btn{
+	color: white;
+}
+
+.white-btn:visited{
+	color: white;
+}
+
+@media (max-width: 991px){
+	.tittle_container, .tittle_container h4, .tittle_container input{
+		color: white;
+		/*position: relative;*/
+		z-index: 3;
+	}
+
+	.tittle_container input{
+		border-color: white;
+
+	}
+	.main_info{
+		/*position: relative;*/
+	}
+	.main_info::after{
+		content: "";
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		background: rgba(0, 0, 0, 0.4);
+	}
+}

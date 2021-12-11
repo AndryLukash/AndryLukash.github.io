@@ -6,13 +6,13 @@
 	<title>Андрей Браун - Веб-разработчик</title>
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
 	<link rel="stylesheet" href="css/reset.css">
-
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- подключение шрифтов  (Вариант 1) -->
 	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> -->
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style_bs.css">
 	<link rel="stylesheet" href="css/loadscreen.css">
 	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css"> <!-- иконки -->
@@ -54,17 +54,44 @@
 
 	<header>
 		<nav>
-			<div class="logo">Андрей Браун</div>
-			<div class="menu">
-				<ul>
-					<li><a href="">Обо мне</a></li>
-					<li><a href="">Услуги</a></li>
-					<li><a href="">Кейсы</a></li>
-					<li><a href="">Прайс</a></li>
-					<li><a href="">Отзывы</a></li>
-					<li><a href="">Контакты</a></li>
-				</ul>
+			<div class="container">
+				<div class="row">
+					<div class="col-xxl-2 col-xl-2 col-lg-3 col-7">
+						<div class="logo">Андрей Браун</div>
+					</div>
+
+					<div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-3  offset-xl-2 offset-lg-1 d-none d-lg-block">
+						<div class="menu">
+							<!-- d-none - не отображать. d-lg-block - после lg отображать как блок  -->
+							<ul>
+								<li><a href="">Обо мне</a></li>
+								<li><a href="">Услуги</a></li>
+								<li><a href="">Кейсы</a></li>
+								<li><a href="">Прайс</a></li>
+								<li><a href="">Отзывы</a></li>
+								<li><a href="">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+						<div class="dropdown">
+							<a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Навигация</a>
+
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<li><a class="dropdown-item" href="#">Обо мне</a></li>
+								<li><a class="dropdown-item" href="#">Услуги</a></li>
+								<li><a class="dropdown-item" href="#">Кейсы</a></li>
+								<li><a class="dropdown-item" href="#">Прайс</a></li>
+								<li><a class="dropdown-item" href="#">Отзывы</a></li>
+								<li><a class="dropdown-item" href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
 			</div>
+
 		</nav>
 	</header>
 
@@ -75,13 +102,19 @@
 		</div>
 
 		<section class="main_info">
-			<div class="tittle_container">
-				<h1>Привет <br> Я <i class="icon-unicorn" aria-hidden="true"></i> Андрей Браун</h1>
-				<h4><i class="fa fa-ravelry custom-icon" aria-hidden="true"></i>
-				Фулл стек веб-разработчик</h4>
-				<input type="button" value="Обо мне">
-				<input type="button" value="Мои работы">
+			<div class="container h-100">
+				<div class="row h-100 align-items-center">
+					<div class="col-lg-6 mt-5 pt-5">
+						<div class="tittle_container mt-5 pt-5">
+							<h1>Привет <br> Я <i class="icon-unicorn" aria-hidden="true"></i> Андрей Браун</h1>
+							<h4><i class="fa fa-ravelry custom-icon" aria-hidden="true"></i>Фулл стек веб-разработчик</h4>
+							<input type="button" value="Обо мне">
+							<input type="button" value="Мои работы">
+						</div>
+					</div>
+				</div>
 			</div>
+			
 		</section>
 
 
@@ -151,29 +184,30 @@
 			<h3>Тип сайта</h3>
 			<select id="site_type">
 				<option value="type1">Выберите пункт...</option>
-				<option value="type1">1</option>
-				<option value="type2">2</option>
-				<option value="type3">3</option>
+				<option value="type1">1 сайт-визитка - 1000р</option>
+				<option value="type2">2 корпоративный сайт - 2000р</option>
+				<option value="type3">3 интернет-магазин - 3000р</option>
 			</select>
 
 			<h3>Дизайн</h3>
 			<select id="site_designe">
 				<option value="type1">Выберите пункт...</option>
-				<option value="des1">1</option>
-				<option value="des2">2</option>
-				<option value="des3">3</option>
+				<option value="des1">1 шаблонный дизайн - 1000р</option>
+				<option value="des2">2 уникальный - 2000р</option>
+				<option value="des3">3 привлечение дизайнера</option>
 			</select>
 
 			<h3>Адаптивность</h3>
 			<select id="site_adaptive">
 				<option value="type1">Выберите пункт...</option>
-				<option value="ad1">1</option>
-				<option value="ad2">2</option>
-				<option value="ad3">3</option>
+				<option value="ad1">1 только для ПК - 1000р</option>
+				<option value="ad2">2 для телефонов и планшетов - 2000р</option>
+				<option value="ad3">3 адаптивная вёрстка - 3000р</option>
 			</select>
 			<hr>
 			<p><span class="text_total">Сроки</span> <span class="total_sum">0</span></p>
 			<p><span class="text_total">Стоимость</span> <span class="total_sum">0</span></p>
+			<button type="button" class="btn btn-primary btn-order">Оформить заказ</button>
 		</section>
 
 
@@ -275,6 +309,7 @@
 
 	</main>
 
-
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/myjs_calc.js"></script>
 </body>
 </html>

@@ -77,10 +77,15 @@ function customerCall(){
 		"1-3");
 }
 
-customerCall();
-// setTimeout(customerCall, 2000);
+// customerCall();	
+setTimeout(customerCall, 2000);
 
-// console.log(Calc);
+console.log(Calc);
+console.log(Calc.Type.TypeChoise);
+console.log(Calc.Type.DesignChoise);
+console.log(Calc.Type.AdaptChoise);
+
+
 function customerResults(){
 	alert("Итого:\nСтоимость составит: " + Calc.totalPriceSum() + " рублей" + "\nКоличество дней, которые понадобятся на решение задачи: " + Calc.totalDaySum());
 
